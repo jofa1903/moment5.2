@@ -1,0 +1,13 @@
+button{
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: color(text);
+    font-family: font(main);
+
+}
+
+#addCourse {
+    @extend button;
+
+  }

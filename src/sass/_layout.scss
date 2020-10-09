@@ -1,0 +1,56 @@
+body{
+    background-color: color(primary);
+    font-family: font(main);
+    color:rgb(255, 255, 255);
+    header{
+        margin-bottom:30px;
+        text-align: center;
+        h1, h3{
+            padding:30px;
+        }
+    }
+
+}
+
+
+#courses{
+    @include textsize(medium);
+    color: color(text);
+    font-family: font(main);
+    background-color: color(accent);
+    text-align: center;
+    width:100%;
+    padding:30px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p{
+        padding:20px;
+    }
+}
+
+.mainsection{
+    padding-top:10%;
+
+}
+
+input{
+    padding:5px;
+    width:100%;
+
+}
+
+textarea{
+    padding:1px;
+    margin:5px;
+    border-radius:2px;
+}
+
+.course-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:50px;
+    padding-top: 30px;
+}

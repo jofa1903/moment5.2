@@ -1,0 +1,62 @@
+// colors
+$colors: (
+    primary: #48ccab,
+    primary-light: lighten(#0D0D0D, 50%),
+    accent: #32a89e,
+    accent-darken: darken(#FF5858, 8%),
+    text:white
+);
+
+
+// fonts
+
+$fonts: (
+    main:'Montserrat',
+);
+
+
+// functions
+@function font($font-name){
+    @return map-get($fonts, $font-name)
+};
+
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+};
+
+// flex alignment 
+
+@mixin flexAlign($direction, $justify){
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    
+};
+
+
+
+// text style
+
+$textsize: " ";
+
+@mixin textsize($textsize){
+    @if $textsize == small{
+        font-size:0.9px;
+    }
+    @else if $textsize == medium{
+        font-size:16px;
+    }
+    @else if $textsize == large{
+        font-size:2.5vw;
+    }
+    @else {
+        font-size:8vw;
+    }
+
+    }
+
+
+
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment 5</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="sass/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Webbutveckling 3 - Moment 5</h1>
+        <h2>Kurser</h2>
+    </header>
+    <div id="container">
+        <div id="courses">
+
+        </div>
+
+    </div>
+    <!-- Courses from database -->
+    <div class="course-container">
+        <h2>Lägg till kurs</h2>
+        <form>
+            <label for="code">Kurskod:</label>
+            <input type="text" name="code" id="code">
+            <br />
+            <label for="name">Kursnamn</label>
+            <input type="text" name="name" id="name">
+            <br />
+            <label for="progression">Progression:</label>
+            <input type="text" name="progression" id="progression">
+            <br />
+            <label for="coursesyllabus">Kursplan:</label>
+            <textarea name="coursesyllabus" id="coursesyllabus"></textarea>
+            <br />
+            <input type="button" value="Lägg till kurs" id="addCourse">
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
